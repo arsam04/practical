@@ -1,0 +1,95 @@
+:root {
+  --purple: #8c38ff;
+  --light: #EEEEEE;
+  --dark: #212121;
+  --red: #e06944;
+  --yellow: #FFFF00;
+}
+
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-image: url("../imgs/casino-back2.png");
+background-repeat: no-repeat;
+background-position: center center;
+color: var(--dark);
+background-size: 107%; 
+}
+
+
+@media (max-width: 1000px) {
+body {
+  background-size: cover; 
+}
+}
+
+.game-container {
+  margin: 30px auto;
+  padding: 20px;
+  border: 10px solid var(--red);
+  width: 300px;
+  background-color: var(--light);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(140, 56, 255, 0.2);
+}
+
+.dice {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.die {
+  width: 50px;
+  height: 50px;
+}
+
+#rollButton {
+  padding: 10px 20px;
+  background-color: var(--purple);
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#winnerMessage {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  margin: 150px auto;
+  padding: 20px;
+  width: 400px;
+  border: 5px solid var(--red);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#closePopupButton {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #8c38ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
